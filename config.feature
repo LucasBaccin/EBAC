@@ -8,7 +8,7 @@
             Contexto:
             Dado que eu acesse a página da EBAC e selecione o produto desejado
 
-            Cenário: Seleções obrigatórias válidas
+            Esquema do Cenário: Seleções obrigatórias válidas
             Quando eu selecionar <color> e <size>
             E a <quantidade> for válida
             Então o produto deve ser inserido no carrinho
@@ -34,7 +34,7 @@
             Quando eu selecionar somente o tamanho do produto
             Então deve aparecer a mensagem "Selecione o cor do produto"
 
-            Cenário: Seleção inválida da quantidade
+            Esquema do Cenário: Seleção inválida da quantidade
             Quando eu selecionar a cor e o tamanho do produto
             E a <quantidade> for inválida
             Então deve aparecer a mensagem "Quantidade de produtos inválida"
@@ -54,4 +54,5 @@
 
 Cenário: Limpar as seleções
 Quando eu clicar no botão "limpar"
-Então deve apagar a seleção de <color>, <size> e <quantidade>
+Então deve apagar a seleção de "color", "size" e "quantidade"
+
