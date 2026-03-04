@@ -6,10 +6,10 @@
         Para finalizar minha compra
 
         Contexto:
-        Dado que eu acesse a página de cadastro do portal EBAC e finalize a minha compra
+        Dado que eu acesse a página de cadastro do portal EBAC
 
         Cenário: Cadastro válido
-        Quando eu inserir todos os <campos>
+        Quando eu inserir todos os campos obrigatórios
         E clicar em finalizar a minha compra
         Então deve concluir a compra
 
@@ -19,7 +19,7 @@
         Então deve aparecer a mensagem "Insira os dados obrigatórios antes de finalizar a compra"
 
         Examples:
-            | dados     |
+            | campo     |
             | nome      |
             | sobrenome |
             | país      |
