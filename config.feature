@@ -26,16 +26,16 @@
             | Red    | L    | 9          |
             | Blue   | XL   | 10         |
 
-            Cenário: Seleções obrigatórias inválidas (cor)
-            Quando eu selecionar somente <color>
+            Cenário: Seleção somente da cor
+            Quando eu selecionar somente a cor do produto
             Então deve aparecer a mensagem "Selecione o tamanho do produto"
 
-            Cenário: Seleções obrigatórias inválidas (tamanho)
-            Quando eu selecionar somente <size>
+            Cenário: Seleção somente do tamanho
+            Quando eu selecionar somente o tamanho do produto
             Então deve aparecer a mensagem "Selecione o cor do produto"
 
-            Cenário: Seleções obrigatórias inválidas (quantidade)
-            Quando eu selecionar <color> e <size>
+            Cenário: Seleção inválida da quantidade
+            Quando eu selecionar a cor e o tamanho do produto
             E a <quantidade> for inválida
             Então deve aparecer a mensagem "Quantidade de produtos inválida"
 
