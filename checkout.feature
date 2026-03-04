@@ -1,4 +1,4 @@
-        # language: pt
+ # language: pt
         Funcionalidade: Checkout da tela de cadastro
 
         Como cliente da EBAC-SHOP
@@ -6,20 +6,20 @@
         Para finalizar minha compra
 
         Contexto:
-        Dado que eu acesse a página de cadastro do portal EBAC
+        Dado que eu acesse a página de cadastro do portal EBAC e finalize a minha compra
 
         Cenário: Cadastro válido
         Quando eu inserir todos os campos obrigatórios
         E clicar em finalizar a minha compra
         Então deve concluir a compra
 
-        Cenário: Campos vazios ou incompletos
+        Esquema do Cenário: Campos vazios ou incompletos
         Quando eu deixar de inserir um dos <campo>
         E clicar em finalizar a minha compra
         Então deve aparecer a mensagem "Insira os dados obrigatórios antes de finalizar a compra"
 
-        Examples:
-            | campo     |
+        Exemplos:
+            | dados     |
             | nome      |
             | sobrenome |
             | país      |
@@ -33,11 +33,11 @@
         Quando eu inserir um email "@ebac.com.br"
         Então o sistema deve seguir válido
 
-        Cenário: Email inválido
+        Esquema do Cenário: Email inválido
         Quando eu inserir o <email>
         Então deve aparecer a mensagem "Email inválido"
 
-        Examples:
+        Exemplos:
             | email         |
             | ebac.com.br   |
             | usuario@      |
